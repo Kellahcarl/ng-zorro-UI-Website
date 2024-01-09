@@ -1,0 +1,15 @@
+<nz-form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="6" nzRequired>Username</nz-form-label>
+    <nz-form-control [nzSpan]="14">
+      <input nz-input formControlName="username" />
+    </nz-form-control>
+  </nz-form-item>
+  <!-- Similar structure for password -->
+
+  <nz-form-item>
+    <nz-form-control [nzSpan]="14" [nzOffset]="6">
+      <button nz-button nzType="primary" type="submit">Log In</button>
+    </nz-form-control>
+  </nz-form-item>
+</nz-form>
